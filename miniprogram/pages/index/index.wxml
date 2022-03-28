@@ -1,4 +1,28 @@
 <view class="page">
-  <view class="title">{{ message }}</view>
-  <van-button plain type="info" bindtap="hi">请求数据</van-button>
+    <view class="header">
+        <image class="header-bg" src="../../images/header-bg.png" />
+        <view class="user-box">
+            <view class="avatar-box">
+                <view>埋</view>
+            </view>
+            <view class="notification-box">
+                <image class="bell-icon" src="../../images/bell.svg"></image>
+                <image class="dot-icon" src="../../images/dot.svg"></image>
+                <view class="dot-number">3</view>
+            </view>
+        </view>
+
+    </view>
+
+    <scroll-view class="category-banner-list" scroll-x>
+        <view style="{{ 'width:' + (categoryBannerList.length * 320 + 40) + 'rpx' }}">
+            <view class="category-box" wx:for="{{categoryBannerList}}" wx:key="index">
+                <image src="{{item.image}}"></image>
+            </view>
+        </view>
+    </scroll-view>
+
+    <view class="trending-musician">
+        <musician-banner title="热榜音乐人" list="{{ musicianBannerList }}"></musician-banner>
+    </view>
 </view>

@@ -1,0 +1,31 @@
+@import '../../style/varibles.scss';
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 240rpx;
+    overflow: hidden;
+    align-items: center;
+    .photo {
+        width: 240rpx;
+        height: 240rpx;
+        border-radius: 240rpx;
+        overflow: hidden;
+    }
+    .name {
+        max-width: 150rpx;
+        margin-top: 20rpx;
+        line-height: 38rpx;
+        font-size: 32rpx;
+        color: #002150;
+    }
+    .category {
+        max-width: 150rpx;
+        margin-top: 10rpx;
+        font-size: 24rpx;
+        color: #7A869A;
+        line-height: 30rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
