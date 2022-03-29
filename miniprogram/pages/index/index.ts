@@ -17,24 +17,41 @@ Page({
             }
         ],
         musicianBannerList: [
-            {   
+            {
                 id: 111,
                 name: '蕾哈娜',
                 category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             },
-            {   
+            {
                 id: 222,
                 name: '蕾哈娜',
                 category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             },
-            {   
+            {
                 id: 333,
                 name: '蕾哈娜',
                 category: '流行音乐',
                 photo: '../../images/musician-photo.png'
             }
+        ],
+        playlist: [
+            {
+                image: '../../images/album.png',
+                title: '心流歌单',
+                description: '歌单描述'
+            },
+            {
+                image: '../../images/album.png',
+                title: '心流歌单',
+                description: '歌单描述'
+            },
+            {
+                image: '../../images/album.png',
+                title: '心流歌单',
+                description: '歌单描述'
+            },
         ]
     },
 

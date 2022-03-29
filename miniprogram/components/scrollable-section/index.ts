@@ -1,7 +1,5 @@
-// components/musician-card/index.ts
+// components/scrollable-section/index.ts
 Component({
-
-    
     /**
      * 组件的属性列表
      */
@@ -9,11 +7,13 @@ Component({
         styleIsolation: 'isolated'
     },
     properties: {
-        item: {
-            type: Object,
-            value: () => {
-                return null
-            }
+        itemWidth: {
+            type: Number,
+            value: 290
+        },
+        itemCount: {
+            type: Number,
+            value: 0
         }
     },
 
@@ -28,8 +28,6 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        onTab() {
-            this.triggerEvent('click',this.properties.item)
-        }
+
     }
 })

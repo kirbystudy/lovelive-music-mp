@@ -1,7 +1,5 @@
-// components/musician-card/index.ts
+// components/album-card/index.ts
 Component({
-
-    
     /**
      * 组件的属性列表
      */
@@ -28,8 +26,6 @@ Component({
      * 组件的方法列表
      */
     methods: {
-        onTab() {
-            this.triggerEvent('click',this.properties.item)
-        }
+
     }
 })

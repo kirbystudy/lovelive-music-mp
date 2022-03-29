@@ -1,35 +1,32 @@
 @import '../../style/varibles.scss';
 
-.card {
+.album-card {
     display: flex;
     flex-direction: column;
-    width: 240rpx;
+    width: 280rpx;
     overflow: hidden;
     align-items: center;
 
-    .photo {
-        width: 240rpx;
-        height: 240rpx;
-        border-radius: 240rpx;
+    .image {
+        width: 280rpx;
+        height: 280rpx;
+        border-radius: 30rpx;
         overflow: hidden;
     }
 
-    .name {
+    .title {
         max-width: 150rpx;
         margin-top: 20rpx;
         line-height: 38rpx;
         font-size: 32rpx;
         color: $text-active-color;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
 
-    .category {
+    .description {
         max-width: 150rpx;
         margin-top: 10rpx;
         font-size: 24rpx;
-        color: $text-color;
+        color: #7A869A;
         line-height: 30rpx;
         overflow: hidden;
         text-overflow: ellipsis;
